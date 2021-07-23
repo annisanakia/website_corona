@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col-md-6">
                 <br>
-                <div class="card">
+                <div class="card h-100">
                     <div class="card-header bg-tosca text-white">
                         <h5 class="card-title mb-0">Vaksin Sinovac</h5>
                     </div>
@@ -33,7 +33,7 @@
             </div>
             <div class="col-md-6">
                 <br>
-                <div class="card">
+                <div class="card h-100">
                     <div class="card-header bg-tosca text-white">
                         <h5 class="card-title mb-0">Vaksin AstraZeneca</h5>
                     </div>
