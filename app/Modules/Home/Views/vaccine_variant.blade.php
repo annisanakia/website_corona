@@ -13,41 +13,24 @@
         <br>
         <h4>Varian Vaksin</h4>
         <div class="row">
+            @foreach($datas as $data)
             <div class="col-md-6">
                 <br>
                 <div class="card h-100">
                     <div class="card-header bg-tosca text-white">
-                        <h5 class="card-title mb-0">Vaksin Sinovac</h5>
+                        <h5 class="card-title mb-0">{{ $data->name }}</h5>
                     </div>
                     <div class="card-body">
                         <p class="card-text">
-                            Vaksin Corona buatan Sinovac menggunakan inactivated virus atau virus utuh yang sudah dimatikan.
-                            Menurut Organisasi Kesehatan Dunia (WHO), metode ini sudah terbukti manjur dan telah digunakan dalam
-                            pengembangan vaksin lain, seperti flu dan polio.
+                            {{ $data->desc }}
                         </p>
                     </div>
                     <div class="card-footer">
-                        <a href="https://alodokter.com/" target="_blank" class="btn bg-navy text-white float-end">Dapatkan Vaksin</a>
+                        <a href="{{ $data->link }}" target="_blank" class="btn bg-navy text-white float-end">Dapatkan Vaksin</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <br>
-                <div class="card h-100">
-                    <div class="card-header bg-tosca text-white">
-                        <h5 class="card-title mb-0">Vaksin AstraZeneca</h5>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">
-                            Dalam vaksin AstraZeneca, viral vector yang digunakan adalah adenovirus atau virus umum yang biasa
-                            menginfeksi tubuh manusia dalam penyakit sakit tenggorokan, demam atau pneumonia.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="https://alodokter.com/" target="_blank" class="btn bg-navy text-white float-end">Dapatkan Vaksin</a>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
         <br><br>
     </div>

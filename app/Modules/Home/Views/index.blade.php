@@ -125,7 +125,7 @@
                     <i class="fas fa-virus fa-3x"></i>
                     <div class="card-body">
                         <h5 class="card-title">Terkonfirmasi</h5>
-                        <h1 class="card-title">3.082.410</h1>
+                        <h1 class="card-title">{{ number_format($terkonfirmasi) }}</h1>
                     </div>
                 </div>
             </div>
@@ -136,7 +136,7 @@
                     <i class="fas fa-procedures fa-3x"></i>
                     <div class="card-body">
                         <h5 class="card-title">Dirawat</h5>
-                        <h1 class="card-title">569.901</h1>
+                        <h1 class="card-title">{{ number_format($dirawat) }}</h1>
                     </div>
                 </div>
             </div>
@@ -147,7 +147,7 @@
                     <i class="fas fa-heartbeat fa-3x"></i>
                     <div class="card-body">
                         <h5 class="card-title">Sembuh</h5>
-                        <h1 class="card-title">2.431.911</h1>
+                        <h1 class="card-title">{{ number_format($sembuh) }}</h1>
                     </div>
                 </div>
             </div>
@@ -158,7 +158,7 @@
                     <i class="fas fa-skull-crossbones fa-3x"></i>
                     <div class="card-body">
                         <h5 class="card-title">Meninggal</h5>
-                        <h1 class="card-title">80.598</h1>
+                        <h1 class="card-title">{{ number_format($meninggal) }}</h1>
                     </div>
                 </div>
             </div>

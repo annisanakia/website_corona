@@ -30,7 +30,7 @@
                     <i class="fas fa-user fa-3x"></i>
                     <br>
                     <h5>Alvita Budianti</h5>
-                    (20190801206)<br>
+                    (20190801203)<br>
                     Teknik Informatika<br>
                     Mata Kuliah Pemrograman Web<br>
                     Universitas Esa Unggul
