@@ -15,7 +15,7 @@ class covid19_case extends Model {
     protected $dates = ['deleted_at'];
     
     public static $rules = array(
-        'id' => 'required',
+        'provinsi' => 'required'
     );
     
     public function validate($data)

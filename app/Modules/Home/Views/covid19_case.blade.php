@@ -12,6 +12,8 @@
     <div class="container">
     <br>
     <h4>Data Penyebaran Covid-19 Tiap Provinsi</h4>
+    <a href="{{ url('home/covid19_case_create') }}" class="btn btn-primary float-end">Tambah Data</a>
+    <br>
     <div class="table-responsive mt-4">
         <table class="table table-bg-w table-hover">
             <thead class="bg-grey text-white">
@@ -21,6 +23,7 @@
                     <th>Terkonfirmasi</th>
                     <th>Sembuh</th>
                     <th>Meninggal</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -36,6 +39,10 @@
                             <td>{{ number_format($data->dirawat) }}</td>
                             <td>{{ number_format($data->sembuh) }}</td>
                             <td>{{ number_format($data->meninggal) }}</td>
+                            <td>
+                                <a href="{{ url('home/covid19_case_edit/'.$data->id) }}" class="btn btn-success">Edit</a>
+                                <a href="{{ url('home/covid19_case_delete/'.$data->id) }}" class="btn btn-danger">Delete</a>
+                            </td>
                         </tr>
                     @endforeach
                 @endif
